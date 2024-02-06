@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Unblocker</title>
+</head>
+<body>
+
+    <h1>Website Unblocker</h1>
+
+    <form id="proxyForm">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" name="url" placeholder="https://example.com" required>
+        <button type="button" onclick="visitWebsite()">Visit Website</button>
+    </form>
+
+    <script>
+        function visitWebsite() {
+            // Get the URL entered by the user
+            var enteredURL = document.getElementById("url").value;
+
+            // Redirect to the entered URL
+            window.location.href = enteredURL;
+        }
+    </script>
+
+</body>
+</html>

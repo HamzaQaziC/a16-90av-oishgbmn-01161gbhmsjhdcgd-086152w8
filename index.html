@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Proxy Login</title>
+    <link rel="stylesheet" href="style.css">
+   
+    
+</head>
+<body>
+<div class="job">
+ <div class="header">
+  <div class="logo">
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path xmlns="http://www.w3.org/2000/svg" d="M512 503.5H381.7a48 48 0 01-45.3-32.1L265 268.1l-9-25.5 2.7-124.6L338.2 8.5l23.5 67.1L512 503.5z" fill="#0473ff" data-original="#28b446" />
+    <path xmlns="http://www.w3.org/2000/svg" fill="#0473ff" data-original="#219b38" d="M361.7 75.6L265 268.1l-9-25.5 2.7-124.6L338.2 8.5z" />
+    <path xmlns="http://www.w3.org/2000/svg" d="M338.2 8.5l-82.2 234-80.4 228.9a48 48 0 01-45.3 32.1H0l173.8-495h164.4z" fill="#0473ff" data-original="#518ef8" />
+   </svg>
+   <span id="nav"> Diamond Proxy </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+            <div class="user-box">
+                <input type="text" name="username" required="true" id="username">
+                <label>SNID</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="password" required="true" id="password">
+                <label>Password</label>
+            </div>
+            <a id="LoginLink" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span id="loginLink" onclick="checkCredentials()">Submit</span>
+            </a>
+        </form>
+    </div>
+
+ <script>
+        function checkCredentials() {
+            // Retrieve the username and password from the input fields
+            var enteredUsername = document.getElementById("username").value;
+            var enteredPassword = document.getElementById("password").value;
+
+            // Replace these with your actual username and password validation logic
+            var correctUsername = "test";
+            var correctPassword = "admin";
+
+            // Check if the entered username and password are correct
+            if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
+                // Redirect to the new HTML page with username as a query parameter
+                window.location.href = "diaproxy.html"
+            } else {
+                alert("Incorrect username or password. Please try again.");
+            }
+        }
+    </script>
+
+
+</body>
+</html>
